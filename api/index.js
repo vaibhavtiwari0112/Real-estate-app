@@ -5,11 +5,11 @@ import cookieParser from 'cookie-parser';
 import userRouter from './routes/user.route.js'
 import authRouter from './routes/auth.route.js'
 import listingRouter from './routes/listing.route.js';
-import path from "path";
+import path from 'path';
 dotenv.config();
 
 
-mongoose.connect(process.env.MONGO).then(() => {
+mongoose.connect(`${process.env.MONGO}`).then(() => {
     console.log(`Connected to database`);
 }).catch((err) => {
     console.log(err);
