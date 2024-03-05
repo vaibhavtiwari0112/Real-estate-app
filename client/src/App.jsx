@@ -11,7 +11,6 @@ import UpdateListing from "./pages/UpdateListing";
 import Listing from "./pages/Listing";
 import Search from "./pages/Search";
 
-
 export default function App() {
   return (
     <BrowserRouter>
