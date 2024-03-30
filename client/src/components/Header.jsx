@@ -7,11 +7,11 @@ const Header = () => {
   const { currentUser } = useSelector((state) => state.user);
   return (
     <div>
-      <header className="bg-slate-200 shadow-md">
+      <header className="bg-slate-900 shadow-md">
         <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
           <Link to="/">
             <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
-              <span className="text-slate-500">sahand</span>
+              <span className="text-slate-500">Amazing</span>
               <span className="text-slate-700">E-state</span>
             </h1>
           </Link>
@@ -25,12 +25,12 @@ const Header = () => {
           </form>
           <ul className="flex gap-4">
             <Link to="/">
-              <li className="hidden sm:inline text-slate-700 hover:underline">
+              <li className="hidden sm:inline text-slate-700  hover:text-white">
                 Home
               </li>
             </Link>
             <Link to="/about">
-              <li className="hidden sm:inline text-slate-700 hover:underline">
+              <li className="hidden sm:inline text-slate-700 hover:text-white">
                 About
               </li>
             </Link>
